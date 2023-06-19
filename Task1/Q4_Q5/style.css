@@ -1,0 +1,109 @@
+
+
+
+
+/* <-------------------------------------------------------------TASK 4 ------------------------------------> */
+body {
+    font-size: 20px;
+  }
+  
+  /* TASK -1 : Different font size in different screens */
+
+  @media (max-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      font-size: 24px;
+    }
+  }
+  
+
+
+  /* TASK-2 :  Different view on different screens based on orientation */
+
+  @media (orientation: landscape) {
+   .text{
+    color: aqua;
+   } 
+    
+  }
+  @media (orientation: portrait) {
+    .text{
+        color:red;
+       } 
+  }
+  
+  /* TASK-3:- Hide elements in different screens */
+
+  @media (max-width: 450px) {
+    .text {
+      display: none;
+    }
+  }
+
+  /* TASK-4 : Include background images using max width and height property */
+
+  @media (min-width: 700px) {
+    body {
+      background-image: url('https://images.unsplash.com/photo-1542401886-65d6c61db217?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+      background-size: cover;
+    }
+  }
+  @media (max-width: 700px) {
+    body {
+      background-image: url('https://images.unsplash.com/photo-1542466500-dccb2789cbbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60');
+      background-size: cover;
+    }
+  }
+
+
+
+/* <-------------------------------------------------------------TASK 5 ------------------------------------> */
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    
+  }
+  .container>div>img{
+    width: 100%;
+  }
+  
+  .grid  {
+    background-color:beige;
+    padding: 15px;
+    text-align: center;
+  }
+  
+
+  @media (max-width: 650px) {
+    .container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+
+  @media (min-width: 650px) and (max-width: 1200px) {
+    .grid .img-1 {
+      grid-column: span 3;
+    }
+    .grid .img-2 {
+      grid-column: span 3;
+    }
+    .grid .img-3 {
+      grid-column: span 5;
+    }
+    .grid .img-4 {
+      grid-column: span 5;
+    }
+  }
+  
+
+ 
+  

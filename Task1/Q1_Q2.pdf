@@ -1,0 +1,18 @@
+
+1. Difference between HTML and HTML 5
+Ans.
+1.	Users cannot draw shapes like circles, triangles, and rectangles in HTML.
+2.	The browser interface and JavaScript operate on the same thread.
+3.	Practically all browsers are compatible with this. 
+4.	Cookies and the browser cache are only used by HTML to temporarily store data.
+
+1.	Users can draw forms like circles, triangles, and rectangles using HTML 5. 
+2.	For short-term data storage, HTML5 makes use of application cache, local storage, and web SQL databases.
+3.	Since there are numerous new tags and components that only some browsers support, only compatible with newer browsers.
+4.	For short-term data storage, HTML5 makes use of application cache, local storage, and web SQL databases.
+
+
+2. What is responsive web design?
+Ans.
+Utilizing code, responsive web design automatically adapts the layout to various screen sizes and resolutions. It is 
+what enables consumers to view a web page smoothly whether they are using a large desktop display or a small mobile device. 
